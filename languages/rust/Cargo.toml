@@ -1,0 +1,17 @@
+[package]
+name = "languages"
+version = "1.0.0"
+authors = ["kojq"]
+edition = "2021"
+description = "Benchmark memory-safe languages"
+readme = "README.md"
+repository = "https://github.com/kojq/bemela"
+keywords = ["languages", "benchmark"]
+
+[profile.release]
+opt-level = 3
+debug = false
+strip = true
+lto = true
+incremental = false
+codegen-units = 1
