@@ -11,7 +11,7 @@ Disrespect is not tolerated. Feel free to [join the Discord server](https://disc
 
 ## Usage
 
-Install each language you want to test onto your development environment. Modify the Bash scripts as needed. In order, run `compile.sh`, `time.sh`, and `measure.sh`.
+Install each language you want to test onto your development environment. Modify the Bash scripts as needed. In order, run `compile.sh`, `time.sh`, and `measure.sh`. The results are stored in `benchmarks.txt`.
 
 These must be done within the development environment:
 
@@ -27,7 +27,7 @@ The `time.sh` file times each binary (with preset example inputs) and aggregates
 
 This can be done outside the development environment:
 
-The `measure.sh` file measures the size of each binary and aggregates the results into a readable format, `measurements.txt`. It also spits out a `benchmarks.txt` file, indicating information aggregated from `versions.txt`, `times.txt`, and `measurements.txt`.
+The `measure.sh` file measures the size of each binary and aggregates the results into a readable format, `measurements.txt`. It also spits out a `benchmarks.txt` file, indicating information from `versions.txt`, `times.txt`, and `measurements.txt`.
 ```ShellSession
 ./measure.sh
 ```
